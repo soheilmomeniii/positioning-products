@@ -1,6 +1,6 @@
 ---
 name: positioning-products
-description: Diagnoses and sharpens positioning, category strategy, narrative, homepage copy, launch framing, founder narrative, and brand strategy for companies, products, protocols, books, creators, and ideas. Use when work involves vague messaging, market story, what something should be known for, category design, pitch framing, launch copy, critiquing existing copy, or making a product sound sharper. Interviews for missing facts before writing copy.
+description: Makes a company, product, book, or personal brand legible, desirable, and inevitable, then writes the copy to match. Diagnoses before it writes, pressure-tests you against rivals' real copy, won't ship claims you can't prove, and always ends with your next move. Use for positioning, category strategy, naming, homepage and launch copy, founder narrative, or a line-by-line critique of existing copy.
 ---
 
 # Positioning Products
