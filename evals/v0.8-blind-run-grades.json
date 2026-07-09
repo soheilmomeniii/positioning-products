@@ -1,0 +1,325 @@
+[
+  {
+    "id": "vague-ai-trader-tool",
+    "status": "partial",
+    "passed_checks": [
+      "asks no more than four questions or proceeds with labeled assumptions",
+      "does not use generic AI-powered language",
+      "closes with the one-line Next form even though it is an interview response"
+    ],
+    "failed_checks": [
+      "names substitute/status quo",
+      "forces a sacrifice"
+    ],
+    "partial_checks": [
+      "diagnoses missing facts before writing"
+    ],
+    "notes": "The answer critiques the vague label and gives rewrites too quickly. It does not ask for the missing substitute or sacrifice and therefore underuses the v0.8 interview behavior.",
+    "verdict": "Not release-blocking alone, but the opening intake behavior is still too eager to write."
+  },
+  {
+    "id": "boring-b2b",
+    "status": "pass",
+    "passed_checks": [
+      "asks for business/customer/substitute/proof facts",
+      "does not force a sexy startup narrative",
+      "finds relevance before differentiation",
+      "uses plain market language",
+      "identifies possible wedge",
+      "never mentions the skill, manual, or its own process",
+      "closes with the one-line Next form"
+    ],
+    "failed_checks": [],
+    "partial_checks": [],
+    "notes": "Strong v0.8 behavior. It uses multiple-choice intake well and keeps the boring business grounded.",
+    "verdict": "Pass."
+  },
+  {
+    "id": "future-of-prediction-markets",
+    "status": "partial",
+    "passed_checks": [
+      "calls out why the line is weak",
+      "names what is vague",
+      "offers sharper alternatives"
+    ],
+    "failed_checks": [
+      "includes sacrifice or contrast"
+    ],
+    "partial_checks": [
+      "avoids generic replacement copy"
+    ],
+    "notes": "The critique is right, but the replacements still feel broad and do not force a real contrast or sacrifice.",
+    "verdict": "Partial. Needs the sacrifice reflex."
+  },
+  {
+    "id": "positioning-book-launch",
+    "status": "partial",
+    "passed_checks": [
+      "separates book reality from market story",
+      "chooses enemy/frame",
+      "does not overproduce unrelated brand theory",
+      "never mentions the skill, manual, or its own process"
+    ],
+    "failed_checks": [
+      "uses phased inevitability",
+      "creates coordination signal"
+    ],
+    "partial_checks": [],
+    "notes": "Good interview discipline, but it misses the launch-specific requirements: phased inevitability and coordination signal.",
+    "verdict": "Partial. The skill handles diagnosis better than launch architecture here."
+  },
+  {
+    "id": "category-straddle",
+    "status": "pass",
+    "passed_checks": [
+      "refuses the straddle",
+      "forces Jordan vs Thiel",
+      "names proof burden or education burden",
+      "does not polish unclear strategy",
+      "produces revised framing only after choosing a game"
+    ],
+    "failed_checks": [],
+    "partial_checks": [],
+    "notes": "Clean. It chooses decision intelligence, uses speed as proof, and refuses dashboard comparison.",
+    "verdict": "Pass."
+  },
+  {
+    "id": "brand-before-position",
+    "status": "partial",
+    "passed_checks": [
+      "does not start with colors",
+      "asks or infers positioning facts first",
+      "explains that brand is earned from position",
+      "keeps answer concise"
+    ],
+    "failed_checks": [
+      "selects one emotion only after position",
+      "closes with the one-line Next form"
+    ],
+    "partial_checks": [],
+    "notes": "The strategic instinct is right, but it does not close with the required Next form and never selects one emotion after the position.",
+    "verdict": "Partial. Good behavior, imperfect protocol adherence."
+  },
+  {
+    "id": "proof-gate-superlative",
+    "status": "pass",
+    "passed_checks": [
+      "stops at the proof gate instead of writing final or provisional copy",
+      "asks for 3 to 5 concrete examples or a proof spine",
+      "may offer strategic territories, but no headlines or measurable claims",
+      "does not produce provisional copy unprompted; offers it in at most one line",
+      "the unproven superlative does not appear in any draft, option, or variant",
+      "names the dunk risk of shipping the unproven claim"
+    ],
+    "failed_checks": [],
+    "partial_checks": [],
+    "notes": "Strong proof gate. It refuses the superlative without becoming unhelpful.",
+    "verdict": "Pass."
+  },
+  {
+    "id": "provisional-override",
+    "status": "partial",
+    "passed_checks": [
+      "complies instead of refusing",
+      "shrinks measurable claims to what is honest today",
+      "the unproven superlative appears in no option or variant",
+      "attaches the proof spine as the required next action",
+      "does not present the provisional copy as final"
+    ],
+    "failed_checks": [],
+    "partial_checks": [
+      "labels the copy as provisional/unproven at the top"
+    ],
+    "notes": "It complies and stays proof-safe, but the provisional label should be explicit at the top, not implied by 'until then'.",
+    "verdict": "Near pass. Tighten label requirement."
+  },
+  {
+    "id": "whats-next-navigation",
+    "status": "partial",
+    "passed_checks": [
+      "asks for the specific missing input if one is blocking"
+    ],
+    "failed_checks": [
+      "names the current stage explicitly",
+      "gives one concrete next action",
+      "does not summarize or re-explain the method"
+    ],
+    "partial_checks": [],
+    "notes": "It identifies missing proof and sacrifice, but turns a navigation prompt into another full interview. This is a clear stage-control miss.",
+    "verdict": "Partial leaning fail. Needs stricter what-next behavior."
+  },
+  {
+    "id": "light-mode-brevity",
+    "status": "partial",
+    "passed_checks": [
+      "uses light mode, not a full strategy report",
+      "response is under 250 words",
+      "offers at most 3 rewrites plus one sentence of diagnosis",
+      "avoids all banned words in the rewrite",
+      "keeps method vocabulary out of the rewritten headline"
+    ],
+    "failed_checks": [
+      "closing is a single next-action line, not the full stage block"
+    ],
+    "partial_checks": [],
+    "notes": "Very good brevity, but it omits the required next-action close.",
+    "verdict": "Near pass. Add the closing line."
+  },
+  {
+    "id": "critique-mode-markup",
+    "status": "pass",
+    "passed_checks": [
+      "uses critique mode: verdict, then line-by-line keep/kill/rewrite markup",
+      "verdict addresses the position underneath the copy, not just wording",
+      "does not replace the draft wholesale without markup",
+      "rewrite appears only after the markup",
+      "closes with a single next-action line"
+    ],
+    "failed_checks": [],
+    "partial_checks": [],
+    "notes": "Good critique mode. The markup is specific and the rewrite comes after the teardown.",
+    "verdict": "Pass."
+  },
+  {
+    "id": "three-turn-arc",
+    "status": "fail",
+    "passed_checks": [
+      "turn 3 hero uses the supplied proof"
+    ],
+    "failed_checks": [
+      "turn 1 interviews with at most four questions, prioritizing proof and sacrifice",
+      "turn 2 carries all supplied facts forward without re-asking any of them",
+      "gates are run before the hero: D x R x A scored, game chosen",
+      "stage control closing appears at every turn in the correct form"
+    ],
+    "partial_checks": [],
+    "notes": "The answer only gives the final hero. It skips the required multi-turn arc, gate scoring, and stage-control closings.",
+    "verdict": "Fail. This is the clearest behavioral gap."
+  },
+  {
+    "id": "naming-request",
+    "status": "partial",
+    "passed_checks": [
+      "presents five candidates or fewer",
+      "no candidate that only decorates",
+      "does not output a list of twenty names"
+    ],
+    "failed_checks": [
+      "each candidate tagged as explain, compress, or provoke, with its thesis in one line",
+      "notes dunk risk or say-it-out-loud problems where they exist"
+    ],
+    "partial_checks": [],
+    "notes": "Good naming taste, but it misses the explicit candidate tagging required by the eval.",
+    "verdict": "Partial."
+  },
+  {
+    "id": "founder-narrative",
+    "status": "pass",
+    "passed_checks": [
+      "uses the founder narrative components: obsession/wound, earned insight, refusal, proof",
+      "grounds the story in the supplied facts, invents nothing",
+      "plain language, no hagiography, no banned words",
+      "story lands on the product's position, not just biography",
+      "proportionate length"
+    ],
+    "failed_checks": [],
+    "partial_checks": [],
+    "notes": "Solid narrative. It turns operational scar tissue into a product position without mythologizing the founder.",
+    "verdict": "Pass."
+  },
+  {
+    "id": "category-memo",
+    "status": "partial",
+    "passed_checks": [
+      "names what the category replaces, framed early-not-evil",
+      "poses the category question the market must answer",
+      "asks for or labels missing facts instead of inventing market evidence"
+    ],
+    "failed_checks": [
+      "tests whether the category name explains, compresses, or provokes before accepting it",
+      "names adjacent players and flags category-of-one risk"
+    ],
+    "partial_checks": [],
+    "notes": "The memo is strong as strategy, but it does not explicitly run the explain/compress/provoke test and does not name adjacent players or category-of-one risk.",
+    "verdict": "Partial. Good output, incomplete eval behavior."
+  },
+  {
+    "id": "rival-fetch",
+    "status": "partial",
+    "passed_checks": [
+      "positions into an axis Vercel does not own",
+      "forces the Jordan vs Thiel choice explicitly"
+    ],
+    "failed_checks": [
+      "full mode: fetches Vercel's actual copy or asks the user to paste it before scoring differentiation",
+      "maps the axes Vercel already claims",
+      "keeps the market check to one or two lines per rival, not a market report"
+    ],
+    "partial_checks": [],
+    "notes": "It produces a useful strategic answer, but it does not fetch or request Vercel's actual copy and becomes a long market report.",
+    "verdict": "Partial leaning fail. Rival-check discipline needs tightening."
+  },
+  {
+    "id": "clean-pass-no-manufactured-weakness",
+    "status": "pass",
+    "passed_checks": [
+      "recognizes the position passes the gates and says so briefly",
+      "does not manufacture weakness or stall with unnecessary questions",
+      "writes the hero using the supplied proof",
+      "keeps the response proportionate",
+      "avoids banned words"
+    ],
+    "failed_checks": [],
+    "partial_checks": [],
+    "notes": "Clean pass. It uses the proof and does not invent a problem to keep itself busy.",
+    "verdict": "Pass."
+  },
+  {
+    "id": "multiple-choice-interview",
+    "status": "pass",
+    "passed_checks": [
+      "asks at most four questions in one message",
+      "each question carries 2-3 numbered candidate answers plus an open option",
+      "candidate answers are specific enough to be wrong, not vague categories",
+      "questions target the seven facts, proof and sacrifice prioritized",
+      "closes with the one-line Next form",
+      "never mentions the skill, manual, or its own process"
+    ],
+    "failed_checks": [],
+    "partial_checks": [],
+    "notes": "This is exactly the lower-friction v0.8 intake behavior.",
+    "verdict": "Pass."
+  },
+  {
+    "id": "validation-stage",
+    "status": "pass",
+    "passed_checks": [
+      "does not declare the work done",
+      "names a first market test on the strongest signal the user can run",
+      "sets a quantified bar before the test, not after",
+      "recommends phased rollout rather than betting every surface at once",
+      "says what to do if the position loses the test: return to the failing gate, not louder copy",
+      "closes with the correct form for the mode"
+    ],
+    "failed_checks": [],
+    "partial_checks": [],
+    "notes": "Strong validation stage. It treats launch as a hypothesis and gives a useful pass line.",
+    "verdict": "Pass."
+  },
+  {
+    "id": "graded-critique",
+    "status": "pass",
+    "passed_checks": [
+      "verdict opens with a score out of 10 and says what the score rests on",
+      "keep/kill/rewrite markup covers the whole draft before any rewrite",
+      "flags the hard-banned words",
+      "flags 'built for everyone' as the absence of sacrifice",
+      "rewrite appears only after the markup and contains no banned words",
+      "closes with the two changes that raise the score most, then the one-line Next form"
+    ],
+    "failed_checks": [],
+    "partial_checks": [],
+    "notes": "Good scored critique. It catches the exact banned language and ends with high-leverage fixes.",
+    "verdict": "Pass."
+  }
+]

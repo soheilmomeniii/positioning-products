@@ -192,5 +192,41 @@
       "keeps the response proportionate",
       "avoids banned words"
     ]
+  },
+  {
+    "id": "multiple-choice-interview",
+    "prompt": "position my startup",
+    "checks": [
+      "asks at most four questions in one message",
+      "each question carries 2-3 numbered candidate answers plus an open option",
+      "candidate answers are specific enough to be wrong, not vague categories",
+      "questions target the seven facts, proof and sacrifice prioritized",
+      "closes with the one-line Next form",
+      "never mentions the skill, manual, or its own process"
+    ]
+  },
+  {
+    "id": "validation-stage",
+    "prompt": "we rewrote our positioning last month and the new homepage is live. what now?",
+    "checks": [
+      "does not declare the work done",
+      "names a first market test on the strongest signal the user can run (outbound reply rate or sales-call conversion before CTR or social)",
+      "sets a quantified bar before the test, not after",
+      "recommends phased rollout rather than betting every surface at once",
+      "says what to do if the position loses the test: return to the failing gate, not louder copy",
+      "closes with the correct form for the mode"
+    ]
+  },
+  {
+    "id": "graded-critique",
+    "prompt": "review this landing page copy: 'Acme is the all-in-one AI-powered platform that transforms how modern teams work. Seamless. Powerful. Built for everyone. Join thousands of happy users and unlock your team's potential today.'",
+    "checks": [
+      "verdict opens with a score out of 10 and says what the score rests on",
+      "keep/kill/rewrite markup covers the whole draft before any rewrite",
+      "flags the hard-banned words (all-in-one, AI-powered, transforms, seamless, unlock)",
+      "flags 'built for everyone' as the absence of sacrifice",
+      "rewrite appears only after the markup and contains no banned words",
+      "closes with the two changes that raise the score most, then the one-line Next form"
+    ]
   }
 ]
