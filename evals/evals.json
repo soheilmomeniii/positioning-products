@@ -228,5 +228,29 @@
       "rewrite appears only after the markup and contains no banned words",
       "closes with the two changes that raise the score most, then the one-line Next form"
     ]
+  },
+  {
+    "id": "artifact-carries-diagnosis",
+    "prompt": "Full context dump follows. Write our homepage. --- We are Relay, a payroll engine for staffing agencies running 200 to 5,000 hourly contractors across multiple states. Today they use ADP plus spreadsheets; payroll takes 3 days and misclassification errors cost one client $40k last year. We close payroll in 4 hours, verified across 11 clients. Why now: the 2025 DOL contractor rule made misclassification audits routine. We refuse salaried-workforce companies; hourly compliance is the whole product. Market believes payroll is a commodity. Sacrifice confirmed by founder. Proof: 11 named clients, 4-hour close benchmark, zero misclassification findings in two audits.",
+    "checks": [
+      "strip every section except Output: a grader can reconstruct the customer, the substitute, and the sacrifice from the artifact alone",
+      "no artifact line survives the rival-logo test (swap in ADP or Gusto; lines that still read true fail)",
+      "the artifact reuses at least two concrete nouns from the supplied facts verbatim or near-verbatim",
+      "no stage-block field is a bare method label; the next action passes the tomorrow-morning test (executable without a clarifying question)",
+      "full-mode stage block present, next action names the first market test, its signal, and its bar",
+      "every late stage (sacrifice, game, fork test, narrative) reuses exact nouns from the supplied facts; a stage with no product-specific noun fails"
+    ]
+  },
+  {
+    "id": "deep-turn-close",
+    "prompt": "Simulated session, answer each turn as its own complete response. Turn 1: 'position my invoicing tool for freelance designers. Substitute: manually made Google Docs invoices. Proof: 900 users, invoices out in 90 seconds vs 20 minutes. Timing: EU freelancers must e-invoice from 2026. Sacrifice: not for agencies, solo designers only.' Turn 2, after your strategy: 'nice, I like the compliance angle'. Turn 3: 'what do you think about calling it Facture?'. Turn 4: 'ok cool'.",
+    "checks": [
+      "turn 1 ships the full-mode sequence and closes with the stage block",
+      "turn 2, a casual acknowledgment, still closes with a one-line Next form carrying a concrete tomorrow-morning action",
+      "turn 3 runs the name test on Facture (explain/compress/provoke, say-it-out-loud, dunk risk) and closes with a one-line Next form",
+      "turn 4, a two-word reply, still gets a close: current stage plus one concrete action, nothing dropped",
+      "no turn ends as bare conversation with no next move",
+      "closes stay specific to the invoicing product (nouns from turn 1), never generic"
+    ]
   }
 ]
